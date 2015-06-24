@@ -1,16 +1,14 @@
-
 import random
 
 #Set the number to guess first time
 NUMBER = random.randint(1, 11)
-
 #Set some variables
 tries = 0
 score = 0
 high_score = 0
 
 while True:
-	if tries < 3:
+	if tries < 4:
 		guess = int(input("Guess the number: "))
 
 		#Control answer
@@ -48,6 +46,7 @@ while True:
 	#Exit if user ran out of tries
 	else:
 		print("Sorry, you ran out of tries")
+		print("The number was {}".format(NUMBER))
 		break
 	#Exit if usser doesn't want to continue
 	if again == "no":
