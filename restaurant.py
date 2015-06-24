@@ -49,12 +49,10 @@ order_cost = number_of_soup * SOUP + number_of_coke * COKE + number_of_water * W
 
 #check credit card
 answer = pay_option()
-
 discount = discounts(answer, order_cost)
 total = order_cost - discount
 
 #final message
-
 print("Total of the order: ${}".format(order_cost))
 
 if answer == "Y":
